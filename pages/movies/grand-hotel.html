@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#101112" />
+    <meta name="theme-color" content="#101014" />
     <meta
       name="description"
       content="Консьєрж Ґустав та молодий портьє Зеро опиняються в центрі пригод навколо спадщини й викраденої картини. Історія легендарного готелю поєднує гумор, дружбу та ностальгію."
     />
     <title>Готель «Ґранд Будапешт» — КАДР</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="stylesheet" href="../../assets/css/movie.css" />
     <script src="../../assets/js/theme.js"></script>
     <script src="../../assets/js/components/layout.js" defer></script>
     <script src="../../assets/js/common.js" defer></script>
+    <script src="../../assets/js/movie.js" defer></script>
   </head>
   <body>
     <div data-site-header></div>
@@ -28,18 +29,14 @@
       <article class="movie-detail" aria-labelledby="movie-title">
         <div class="poster poster-grand">
           <img
-            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
-            alt="Будинок біля озера в горах — ілюстрація до фільму Готель Ґранд Будапешт"
+            src="../../assets/images/grand-hotel-poster.jpg"
+            alt="Постер фільму Готель Ґранд Будапешт"
             fetchpriority="high"
-          /><span class="poster-tag">2D</span
-          ><span class="poster-age">16+</span>
-          <div class="poster-title">
-            THE GRAND<br />BUDAPEST<br />HOTEL<span>A WES ANDERSON FILM</span>
-          </div>
+          />
         </div>
 
         <div class="movie-description">
-          <p class="eyebrow">ТВОЯ НАСТУПНА ІСТОРІЯ</p>
+          <p class="eyebrow">У прокаті · Український дубляж</p>
           <h1 id="movie-title">Готель «Ґранд Будапешт»</h1>
           <p class="genre">Комедія, пригоди <span>100 хв</span></p>
           <section class="movie-synopsis" aria-labelledby="synopsis-title">
@@ -51,7 +48,7 @@
             </p>
           </section>
           <section class="movie-schedule" aria-labelledby="session-title">
-            <h2 id="session-title">Сеанс</h2>
+            <h2 id="session-title">Розклад сеансів</h2>
             <p class="demo-note">
               Приклад розкладу. Ціни та кількість місць наведено для
               демонстрації.
@@ -69,23 +66,83 @@
               </div>
             </div>
           </section>
+          <a class="button-secondary trailer-link" href="#trailer-title"
+            ><span class="play-icon" aria-hidden="true">▶</span> Дивитися
+            трейлер</a
+          >
           <a class="back-link" href="../../index.html#movies"
             >← До всіх фільмів</a
           >
         </div>
       </article>
+      <section
+        class="movie-trailer"
+        aria-labelledby="trailer-title"
+        data-video-id="1Fg5iWmQjwk"
+      >
+        <div class="trailer-heading">
+          <h2 id="trailer-title">Трейлер англійською</h2>
+          <button
+            class="trailer-sound"
+            type="button"
+            disabled
+            aria-pressed="false"
+          >
+            Увімкнути звук
+          </button>
+        </div>
+        <div class="trailer-frame">
+          <div id="trailer-player"></div>
+        </div>
+        <p class="trailer-status" role="status">
+          Трейлер відтворюється без звуку. Натисни кнопку «Увімкнути звук» над
+          відео.
+        </p>
+        <a
+          class="trailer-external"
+          href="https://www.youtube.com/watch?v=1Fg5iWmQjwk"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Дивитися на YouTube ↗</a
+        >
+      </section>
       <section class="related-movies" aria-labelledby="related-title">
-        <h2 id="related-title">Ще історії для тебе</h2>
+        <h2 id="related-title">Інші фільми</h2>
         <div class="related-links">
           <a href="dune.html"
-            >Дюна: Частина друга <span aria-hidden="true">↗</span></a
-          ><a href="interstellar.html"
-            >Інтерстеллар <span aria-hidden="true">↗</span></a
-          ><a href="inside-out.html"
-            >Думками навиворіт 2 <span aria-hidden="true">↗</span></a
-          ><a href="batman.html">Бетмен <span aria-hidden="true">↗</span></a
-          ><a href="avatar.html"
-            >Аватар: Шлях води <span aria-hidden="true">↗</span></a
+            ><img
+              src="../../assets/images/dune-poster.jpg"
+              alt=""
+              loading="lazy"
+            /><span>Дюна: Частина друга</span></a
+          >
+          <a href="interstellar.html"
+            ><img
+              src="../../assets/images/interstellar-poster.jpg"
+              alt=""
+              loading="lazy"
+            /><span>Інтерстеллар</span></a
+          >
+          <a href="inside-out.html"
+            ><img
+              src="../../assets/images/inside-out-poster.jpg"
+              alt=""
+              loading="lazy"
+            /><span>Думками навиворіт 2</span></a
+          >
+          <a href="batman.html"
+            ><img
+              src="../../assets/images/batman-poster.jpg"
+              alt=""
+              loading="lazy"
+            /><span>Бетмен</span></a
+          >
+          <a href="avatar.html"
+            ><img
+              src="../../assets/images/avatar-poster.jpg"
+              alt=""
+              loading="lazy"
+            /><span>Аватар: Шлях води</span></a
           >
         </div>
       </section>
