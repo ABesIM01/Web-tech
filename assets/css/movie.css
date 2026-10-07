@@ -1,0 +1,121 @@
+.movie-page {
+  padding-top: 30px;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+.breadcrumbs [aria-current] {
+  color: var(--text);
+}
+.movie-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+}
+.movie-detail .poster {
+  width: 100%;
+}
+.movie-description h1 {
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin: 12px 0 20px;
+  overflow-wrap: anywhere;
+}
+.movie-description .genre {
+  max-width: 440px;
+  font-size: 13px;
+}
+.movie-description h2,
+.related-movies h2 {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+.movie-synopsis {
+  margin: 32px 0;
+}
+.movie-synopsis p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.movie-schedule {
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.demo-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.movie-schedule .session {
+  margin-top: 20px;
+}
+.movie-schedule .session > div {
+  font-size: 15px;
+}
+.movie-schedule .session-label {
+  font-size: 9px;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--accent);
+}
+.related-movies {
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.related-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+.related-links a {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.related-links span {
+  color: var(--accent);
+}
+@media (max-width: 1100px) {
+  .movie-detail {
+    gap: 32px;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .movie-detail {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .movie-detail .poster {
+    max-width: 380px;
+    margin-inline: auto;
+  }
+  .related-links {
+    grid-template-columns: 1fr;
+  }
+  .movie-schedule {
+    padding: 20px;
+  }
+  .related-movies {
+    margin-top: 40px;
+  }
+}

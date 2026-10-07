@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101112" />
+    <title>КАДР — кіно починається тут</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <noscript
+      ><style>
+        .feature:not(.is-active) {
+          display: block;
+        }
+        .slider-status {
+          display: none;
+        }
+      </style></noscript
+    >
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/components/layout.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/home.js" defer></script>
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main class="shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">ТВОЄ МІСЦЕ У СВІТІ КІНО</p>
+          <h1 id="page-title">
+            Великий екран.<br />Ще більші <em>емоції.</em>
+          </h1>
+        </div>
+        <p class="intro-note">
+          Вимкни сповіщення.<br />Увімкни нову історію.<span
+            >Побачимось у кіно <span aria-hidden="true">↙</span></span
+          >
+        </p>
+      </section>
+
+      <section
+        class="premieres"
+        id="premieres"
+        aria-labelledby="premieres-title"
+      >
+        <div class="section-label">
+          <h2 id="premieres-title">
+            <span class="live-dot"></span> У ЦЕНТРІ УВАГИ
+          </h2>
+          <span>ІСТОРІЇ, ЯКІ ВАРТО ПОБАЧИТИ</span>
+        </div>
+        <div
+          class="hero-grid"
+          aria-roledescription="карусель"
+          aria-label="Новинки кіно"
+        >
+          <article
+            class="feature feature-main is-active"
+            aria-label="1 з 6: Дюна: Частина друга"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1400&q=85"
+              alt="Золоті дюни безкрайньої пустелі"
+              fetchpriority="high"
+            />
+            <div class="feature-top">
+              <span class="badge badge-lime">ВЖЕ В КІНО</span
+              ><span class="age">12+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">ФАНТАСТИКА · ПРИГОДИ · 166 ХВ</p>
+              <h3>ДЮНА<span>ЧАСТИНА ДРУГА</span></h3>
+              <div class="feature-bottom">
+                <p>Доля цілого всесвіту —<br />в одній історії.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/dune.html"
+                  aria-label="Сеанс Дюна: Частина друга"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="feature feature-space"
+            aria-label="2 з 6: Інтерстеллар"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=85"
+              alt="Вигляд Землі з космосу"
+            />
+            <div class="feature-top">
+              <span class="badge">ЗНОВУ НА ЕКРАНІ</span
+              ><span class="age">12+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">ЗА МЕЖАМИ МОЖЛИВОГО</p>
+              <h3>ІНТЕРСТЕЛЛАР</h3>
+              <div class="feature-bottom">
+                <p>Космос ближче,<br />ніж здається.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/interstellar.html"
+                  aria-label="Сеанс Інтерстеллар"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="feature feature-city"
+            aria-label="3 з 6: Думками навиворіт 2"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=85"
+              alt="Яскраві різнокольорові вогні"
+            />
+            <div class="feature-top">
+              <span class="badge">ДЛЯ ВСІЄЇ РОДИНИ</span
+              ><span class="age">0+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">ЧАС НОВИХ ЕМОЦІЙ</p>
+              <h3>ДУМКАМИ<br />НАВИВОРІТ <i>2</i></h3>
+              <div class="feature-bottom">
+                <p>Відчуй усе.<br />І навіть більше.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/inside-out.html"
+                  aria-label="Сеанс Думками навиворіт 2"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+        <template id="more-premieres">
+          <article class="feature feature-batman" aria-label="4 з 6: Бетмен">
+            <img
+              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85"
+              alt="Темне небо над містом"
+            />
+            <div class="feature-top">
+              <span class="badge badge-lime">ЧАС ДЛЯ ПРАВДИ</span
+              ><span class="age">16+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">БОЙОВИК · ДЕТЕКТИВ · 176 ХВ</p>
+              <h3>БЕТМЕН</h3>
+              <div class="feature-bottom">
+                <p>У кожного міста<br />є свої таємниці.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/batman.html"
+                  aria-label="Сеанс Бетмен"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="feature feature-hotel"
+            aria-label="5 з 6: Готель Ґранд Будапешт"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85"
+              alt="Будинок біля озера серед гір"
+            />
+            <div class="feature-top">
+              <span class="badge">КІНО З ХАРАКТЕРОМ</span
+              ><span class="age">16+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">КОМЕДІЯ · ПРИГОДИ · 100 ХВ</p>
+              <h3>ГОТЕЛЬ<br />«ҐРАНД БУДАПЕШТ»</h3>
+              <div class="feature-bottom">
+                <p>Заселяйся в історію,<br />яку не забудеш.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/grand-hotel.html"
+                  aria-label="Сеанс Готель Ґранд Будапешт"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="feature feature-avatar"
+            aria-label="6 з 6: Аватар: Шлях води"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85"
+              alt="Сонячні промені в зеленому лісі"
+            />
+            <div class="feature-top">
+              <span class="badge">ВІДКРИЙ ПАНДОРУ</span
+              ><span class="age">12+</span>
+            </div>
+            <div class="feature-content">
+              <p class="feature-meta">ФАНТАСТИКА · ПРИГОДИ · 192 ХВ</p>
+              <h3>АВАТАР<br />ШЛЯХ ВОДИ</h3>
+              <div class="feature-bottom">
+                <p>Поринь у світ<br />неймовірного.</p>
+                <a
+                  class="round-link"
+                  href="pages/movies/avatar.html"
+                  aria-label="Сеанс Аватар: Шлях води"
+                  >↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </template>
+        <div class="slider-status" aria-hidden="true">
+          <span class="slider-dot active"></span><span class="slider-dot"></span
+          ><span class="slider-dot"></span><span class="slider-dot"></span
+          ><span class="slider-dot"></span><span class="slider-dot"></span
+          ><span class="slider-caption">НОВА ІСТОРІЯ КОЖНІ 8 СЕКУНД</span>
+        </div>
+      </section>
+
+      <section class="movies" id="movies" aria-labelledby="movies-title">
+        <div class="movies-heading">
+          <div>
+            <p class="eyebrow">ЗНАЙДИ СВОЮ ІСТОРІЮ</p>
+            <h2 id="movies-title">Що подивимось?</h2>
+          </div>
+          <span class="schedule-label"
+            ><span class="live-dot"></span> ПРИКЛАД РОЗКЛАДУ
+            <span class="schedule-count">06 фільмів</span></span
+          >
+        </div>
+        <div class="movie-grid">
+          <article class="movie-card" id="dune">
+            <a
+              class="poster-link"
+              href="pages/movies/dune.html"
+              aria-label="Про фільм: Дюна: Частина друга"
+              ><div class="poster poster-dune">
+                <img
+                  src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=600&q=80"
+                  alt="Пустельний пейзаж — ілюстрація до фільму Дюна"
+                  loading="lazy"
+                /><span class="poster-tag">IMAX</span
+                ><span class="poster-age">12+</span>
+                <div class="poster-title">DUNE<span>PART TWO</span></div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Фантастика, пригоди <span>166 хв</span></p>
+              <h3><a href="pages/movies/dune.html">Дюна: Частина друга</a></h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>18:30</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span><span>42 місця</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>220 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="movie-card" id="interstellar">
+            <a
+              class="poster-link"
+              href="pages/movies/interstellar.html"
+              aria-label="Про фільм: Інтерстеллар"
+              ><div class="poster poster-interstellar">
+                <img
+                  src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=600&q=80"
+                  alt="Планета Земля — ілюстрація до фільму Інтерстеллар"
+                  loading="lazy"
+                /><span class="poster-tag">IMAX</span
+                ><span class="poster-age">12+</span>
+                <div class="poster-title">
+                  INTERSTELLAR<span>LOVE TRANSCENDS EVERYTHING</span>
+                </div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Фантастика, драма <span>169 хв</span></p>
+              <h3><a href="pages/movies/interstellar.html">Інтерстеллар</a></h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>19:00</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span><span>18 місць</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>250 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="movie-card" id="inside-out">
+            <a
+              class="poster-link"
+              href="pages/movies/inside-out.html"
+              aria-label="Про фільм: Думками навиворіт 2"
+              ><div class="poster poster-emotions">
+                <img
+                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80"
+                  alt="Кольорові вогні — ілюстрація до фільму Думками навиворіт 2"
+                  loading="lazy"
+                /><span class="poster-tag">3D</span
+                ><span class="poster-age">0+</span>
+                <div class="poster-title">
+                  ДУМКАМИ<br />НАВИВОРІТ <b>2</b><span>ДАЙ ВОЛЮ ЕМОЦІЯМ</span>
+                </div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Анімація, сімейний <span>96 хв</span></p>
+              <h3>
+                <a href="pages/movies/inside-out.html">Думками навиворіт 2</a>
+              </h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>16:15</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span><span>56 місць</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>180 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="movie-card" id="batman">
+            <a
+              class="poster-link"
+              href="pages/movies/batman.html"
+              aria-label="Про фільм: Бетмен"
+              ><div class="poster poster-batman">
+                <img
+                  src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80"
+                  alt="Темне небо — ілюстрація до фільму Бетмен"
+                  loading="lazy"
+                /><span class="poster-tag">2D</span
+                ><span class="poster-age">16+</span>
+                <div class="poster-title">
+                  THE<br />BATMAN<span>ЧАС ДЛЯ ПРАВДИ</span>
+                </div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Бойовик, детектив <span>176 хв</span></p>
+              <h3><a href="pages/movies/batman.html">Бетмен</a></h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>20:45</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span
+                  ><span class="few-seats">8 місць</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>200 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="movie-card" id="grand-hotel">
+            <a
+              class="poster-link"
+              href="pages/movies/grand-hotel.html"
+              aria-label="Про фільм: Готель «Ґранд Будапешт»"
+              ><div class="poster poster-grand">
+                <img
+                  src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                  alt="Будинок біля озера в горах — ілюстрація до фільму Готель Ґранд Будапешт"
+                  loading="lazy"
+                /><span class="poster-tag">2D</span
+                ><span class="poster-age">16+</span>
+                <div class="poster-title">
+                  THE GRAND<br />BUDAPEST<br />HOTEL<span
+                    >A WES ANDERSON FILM</span
+                  >
+                </div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Комедія, пригоди <span>100 хв</span></p>
+              <h3>
+                <a href="pages/movies/grand-hotel.html"
+                  >Готель «Ґранд Будапешт»</a
+                >
+              </h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>17:00</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span><span>32 місця</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>170 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="movie-card" id="avatar">
+            <a
+              class="poster-link"
+              href="pages/movies/avatar.html"
+              aria-label="Про фільм: Аватар: Шлях води"
+              ><div class="poster poster-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80"
+                  alt="Ліс у сонячних променях — ілюстрація до фільму Аватар"
+                  loading="lazy"
+                /><span class="poster-tag">3D</span
+                ><span class="poster-age">12+</span>
+                <div class="poster-title">
+                  AVATAR<span>THE WAY OF WATER</span>
+                </div>
+              </div></a
+            >
+            <div class="movie-info">
+              <p class="genre">Фантастика, пригоди <span>192 хв</span></p>
+              <h3><a href="pages/movies/avatar.html">Аватар: Шлях води</a></h3>
+              <div class="session">
+                <div>
+                  <span class="session-label">СЕАНС</span><time>21:15</time>
+                </div>
+                <div>
+                  <span class="session-label">ВІЛЬНО</span><span>24 місця</span>
+                </div>
+                <div>
+                  <span class="session-label">КВИТОК</span
+                  ><strong>240 <small>₴</small></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="closing" id="about">
+        <span class="closing-icon" aria-hidden="true">✳</span>
+        <div>
+          <p class="eyebrow">БІЛЬШЕ, НІЖ ПРОСТО КІНО</p>
+          <h2>Місце, де історії оживають.</h2>
+          <p>Великий екран, об’ємний звук і твій улюблений ряд.</p>
+        </div>
+        <a href="#movies"
+          >Обрати свою історію <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <div data-site-footer></div>
+  </body>
+</html>
