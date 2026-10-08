@@ -94,6 +94,173 @@
   font-size: 13px;
   color: var(--muted);
 }
+.cinema-hall {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.hall-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.hall-heading .eyebrow {
+  margin: 0 0 6px;
+}
+.hall-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 650;
+  letter-spacing: -0.5px;
+}
+.hall-session {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.hall-session strong {
+  color: var(--text);
+}
+.hall-plan {
+  padding: 32px clamp(12px, 4vw, 48px) 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+.hall-screen {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto 40px;
+  padding: 18px 0 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+.hall-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 3px solid var(--accent);
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--accent) 12%, transparent), transparent);
+}
+.hall-rows {
+  display: grid;
+  gap: 14px;
+  max-width: 660px;
+  margin-inline: auto;
+}
+.hall-row {
+  display: grid;
+  grid-template-columns: 20px repeat(5, minmax(0, 1fr)) minmax(12px, 0.7fr) repeat(5, minmax(0, 1fr)) 20px;
+  gap: clamp(4px, 1vw, 12px);
+  align-items: center;
+}
+.hall-row-number {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+.hall-seat {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 44px;
+  border: 1px solid var(--accent);
+  border-bottom-width: 4px;
+  border-radius: 8px 8px 5px 5px;
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel));
+  color: var(--text);
+  font-size: 12px;
+}
+.hall-seat--occupied {
+  border-color: var(--line);
+  background: var(--bg);
+  color: var(--muted);
+}
+.hall-seat--occupied::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 1px;
+  background: var(--muted);
+  transform: rotate(-45deg);
+}
+.hall-exits {
+  display: flex;
+  justify-content: space-between;
+  max-width: 660px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.hall-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  padding: 24px 0 0;
+  margin: 24px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  color: var(--muted);
+  font-size: 13px;
+}
+.hall-legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hall-legend .hall-seat {
+  width: 24px;
+  flex-shrink: 0;
+  border-radius: 5px 5px 3px 3px;
+}
+.hall-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+@media (max-width: 599px) {
+  .cinema-hall {
+    margin-top: 40px;
+  }
+  .hall-heading h2 {
+    font-size: 21px;
+  }
+  .hall-plan {
+    padding-top: 24px;
+  }
+  .hall-screen {
+    margin-bottom: 24px;
+  }
+  .hall-rows {
+    gap: 10px;
+  }
+  .hall-row {
+    grid-template-columns: 12px repeat(5, minmax(0, 1fr)) 10px repeat(5, minmax(0, 1fr)) 12px;
+    gap: 4px;
+  }
+  .hall-seat {
+    font-size: 9px;
+    border-radius: 5px 5px 3px 3px;
+    border-bottom-width: 3px;
+  }
+  .hall-row-number {
+    font-size: 10px;
+  }
+}
 .movie-trailer {
   margin-top: 56px;
   padding-top: 28px;
